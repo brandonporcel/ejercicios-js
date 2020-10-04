@@ -1,0 +1,21 @@
+{
+	"env": {
+		"browser": true,
+		"es2020": true
+	},
+	"extends": ["airbnb-base"],
+	"parserOptions": {
+		"ecmaVersion": 11,
+		"sourceType": "module"
+	},
+	"rules": {
+		"no-tabs": "off",
+		"indent": "off",
+		"linebreak-style": "off",
+		"no-console": "warn",
+		"import/extensions": "off",
+		"import/prefer-default-export": "off",
+		// para que los parametros de una funcion no necesiten una coma al final
+		"comma-dangle": "warn"
+	}
+}

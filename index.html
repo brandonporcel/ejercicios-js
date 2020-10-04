@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>js</title>
+		<!-- GOOGLE FONT -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- HAMBUERGER LIBRARY CSS from cdnjs.com -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
+		/>
+		<!-- STYLES CSS -->
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body id="body">
+		<!-- HEADER -->
+		<header class="header">
+			<h1 class="header__title title-sub">exercises js</h1>
+		</header>
+		<!-- MENU TO SHOW -->
+		<aside id="panel" class="panel">
+			<ul class="menu">
+				<li class="menu__item">
+					<a href="#section-1" class="menu__a">Back to the Future</a>
+				</li>
+				<li class="menu__item">
+					<a href="#section-2" class="menu__a">The End of the F***ing World</a>
+				</li>
+				<li class="menu__item">
+					<a href="#section-3" class="menu__a"
+						>no puedo toy chiquito(responsive)</a
+					>
+				</li>
+				<li class="menu__item">
+					<a href="#section-4" class="menu__a">responsive tester</a>
+				</li>
+				<li class="menu__item"><a href="#section-5" class="menu__a">Sun</a></li>
+				<li class="menu__item"><a href="#section-6" class="menu__a">i know you </a></li>
+				<li class="menu__item"><a href="#section-7" class="menu__a">i see you *insert bojack's voice*</a></li>
+				<li class="menu__item"><a href="#section-8" class="menu__a">7</a></li>
+			</ul>
+		</aside>
+		<!-- OPEN PANEL(menu) -->
+		<button
+			id="panel-btn"
+			class="panel-btn hamburger hamburger--collapse"
+			type="button"
+		>
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+		<!-- SECTIONNNN -->
+		<main class="main">
+			<!-- SECTION 1 -->
+			<section id="section-1" class="section section-1">
+				<div class="container">
+					<h2>Back to the Future</h2>
+					<span id="clock" class="clock"></span>
+					<div class="form-clock">
+						<button id="start-watch">see <b>Time</b></button>
+						<button disabled id="stop-watch">stop see <b>Time</b></button>
+						<button id="start-alarm">listen <b>Alarm</b></button>
+						<button id="stop-alarm" disabled>stop listen <b>Alarm</b></button>
+					</div>
+				</div>
+			</section>
+			<!-- SECTION 2 -->
+			<section id="section-2" class="section section-2">
+				<div class="container">
+					<h2 class="end-world__title">
+						The End of the F***ing World will be in:
+					</h2>
+					<span id="countdown-text"></span>
+				</div>
+			</section>
+			<!-- SECTION 3 -->
+			<section id="section-3" class="section section-3">
+				<div class="container">
+					<h2>no puedo toy chiquito(responsive)</h2>
+					<div id="youtube"></div>
+					<div id="twitter"></div>
+					<script
+						async
+						src="https://platform.twitter.com/widgets.js"
+						charset="utf-8"
+					></script>
+				</div>
+			</section>
+			<!-- SECTION 4 -->
+			<section id="section-4" class="section section-4">
+				<div class="container">
+					<h2>responsive tester</h2>
+					<code>introduce a width and height to see a page in that size</code>
+					<p></p>
+						example: <br />
+						https://google.com <br />
+						720 <br />
+						420
+					</p>
+					<form id="form-responsive-tester">
+						<input type="url" name="url" placeholder="url" required />
+						<br />
+						<input type="number" name="width" placeholder="width" required />
+						<br />
+						<input type="number" name="height" placeholder="height" required />
+						<br />
+						<input type="submit" name="seeResponsivePage" value="see" />
+						<input type="button" name="closeResponsivePage" value="close page" />
+					</form>
+				</div>
+			</section>
+			<!-- SECTION 5 -->
+			<section id="section-5" class="section section-5">
+				<div class="container container-5">
+					<h2 class="sun__title"><mark>sun</mark></h2>
+					<marquee behavior="" direction="right">no conocia estoooo lol</marquee>
+					<code
+					>click on the map to move the sun <br />this game only works with an
+					keyboard</code
+					>
+					
+					<article id="map" class="sun__map">
+						<div id="ball" class="sun__ball"></div>
+					</article>
+				</div>
+			</section>
+			<!-- SECTION 6 -->
+			<section id="section-6" class="section section-6">
+				<div class="container container-6">
+					<h2>i know you</h2>
+					<div id="user-device"></div>
+				</div>
+			</section>
+			<!-- SECTION 7 -->
+			<section id="section-7" class="section section-7">
+				<div class="container container-7">
+					<video id="webcam" controls></video>
+				</div>
+				<!-- SECTION 8 -->
+			</section>
+			<section id="section-8" class="section section-8">
+				<div class="container container-8"></div>
+			</section>
+		</main>
+		<button class="theDarkSide-btn">🌚</button>
+		<button class="toTheSky">👆</button>
+		<script src="js/main.js" type="module"></script>
+	</body>
+</html>
