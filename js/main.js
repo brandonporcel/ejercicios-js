@@ -20,6 +20,12 @@ import { iKnowYou } from './exercises/detect_device.js';
 import { areYouThere } from './exercises/conection_status.js';
 // exercise 8-> show a live if you have camera
 import { iSeeYou } from './exercises/detect_webcam.js';
+// exercise 9-> latitude-coordinates
+import { getGeolocation } from './exercises/geolocation.js';
+// exercise 10-> filter- intern searcher
+import { colador } from './filter_search.js';
+// 11-> raffle/draw.
+import { amongUs } from './exercises/raffle.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 	panelMenu('#panel-btn', '#panel', '.menu__a');
@@ -44,6 +50,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	responsiveTester('form-responsive-tester');
 	iKnowYou('user-device');
 	iSeeYou('webcam');
+	getGeolocation('.geolocation-btn');
+	// me funciona maso creo
+	colador('filter-input', '.filter__item');
+	amongUs(
+		'inputAmongUs',
+		'btnAddToAmongUs',
+		'btnSeeImpostor',
+		'playerList',
+		'impostor-result'
+	);
 });
 //  funca maso maso
 areYouThere();

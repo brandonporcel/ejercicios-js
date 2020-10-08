@@ -17,7 +17,9 @@ html {
 	font-size: var(--font-size);
 	scroll-behavior: smooth;
 }
-
+* {
+	box-sizing: border-box;
+}
 body {
 	margin: 0;
 }
@@ -89,10 +91,9 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	display: flex;
-	align-items: center;
 	transition: transform 0.3s ease;
 	transform: translate(-100%, 0);
+	overflow-y: auto;
 }
 .panel.active {
 	transform: translate(0, 0);
@@ -121,6 +122,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding: 1rem;
 }
 /* SECTION 1 */
 .clock {
@@ -193,6 +195,16 @@ body {
 	background-color: var(--third-color);
 	border-color: #fff;
 }
+.dark-mode .panel {
+	background-color: var(--third-color);
+}
+.dark-mode .menu__a:hover {
+	background-color: var(--second-modal-color);
+}
+.dark-mode .filter__item {
+	background-color: var(--third-color);
+	color: #fff;
+}
 /* Responsive que no come todo el internet si estas en celu(?) */
 .section-3 .container {
 	height: 500px;
@@ -225,9 +237,107 @@ div#twitter {
 }
 /* EXercise 8-> dec}tection webcam */
 .container-7 {
-	background-color: red;
 	display: block;
 }
+/* ejercicio 9-> geolocalizacion */
+div#spotify iframe {
+	height: 80px;
+}
+.dark-mode .container-8 a {
+	color: var(--third-color);
+}
+.geolocation-btn {
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #000;
+	background-color: var(--main-color);
+	cursor: pointer;
+	font-weight: bold;
+	border: 1px solid transparent;
+	padding: 0.5rem;
+}
+.dark-mode .geolocation-btn {
+	color: var(--main-color);
+	background-color: var(--black-modal-color);
+}
+.geolocation-btn:hover {
+	border: 1px solid var(--black-color);
+}
+.dark-mode .geolocation-btn:hover {
+	border: 1px solid var(--main-color);
+}
+/* escersie 10-> filter/buscador */
+.filter {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 25px 25px;
+}
+.filter__input {
+	background-color: #efefef;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+	margin: 10px auto;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filter__title {
+	margin: 0;
+	margin-bottom: 10px;
+}
+.filter__ul {
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+}
+.dark-mode .filter__ul {
+	background-color: var(--second-modal-color);
+}
+.filter__item {
+	list-style: none;
+	margin-left: 20px;
+	width: 100px;
+	height: 100px;
+	background-color: var(--main-color);
+	color: #000;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.filter__item:nth-child(1) {
+	margin-left: 0;
+}
+.filter-found {
+	display: none;
+	margin: 0;
+}
+/* 11 among us*/
+
+.dark-mode .amongUs__addBtn,
+.dark-mode .amongUs__impostorBtn {
+	width: 150px;
+}
+.amongUs__playerList {
+	overflow: auto;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-wrap: break-word;
+}
+
+/* tamaño compu */
 @media screen and (min-width: 1024px) {
 	.header__title:hover {
 		color: var(--black-modal-color);
@@ -260,6 +370,20 @@ div#twitter {
 	}
 	.dark-mode header h1:hover {
 		color: var(--third-color);
+	}
+	.filter__input:hover {
+		background: #e2e2e2;
+	}
+}
+@media screen and (max-width: 875px) {
+	.filter__ul {
+		background: green;
+	}
+	.filter__item:nth-child(1) {
+		margin-left: 20px;
+	}
+	.filter__item {
+		margin-top: 20px;
 	}
 }
 @media screen and (max-width: 965px) {

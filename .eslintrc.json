@@ -15,7 +15,21 @@
 		"no-console": "warn",
 		"import/extensions": "off",
 		"import/prefer-default-export": "off",
-		// para que los parametros de una funcion no necesiten una coma al final
-		"comma-dangle": "warn"
+		// no la entiendo mucho
+		"prefer-destructuring": "warn",
+		// prettier lo hace de una forma en la que eslint no acepta. no se puede hacer anything
+		"operator-linebreak": "warn",
+		// para que no tirre error cuando en una func con params no haga falta coma al final,bardo con prettier
+		// https://github.com/wantedly/frolint/issues/31
+		"comma-dangle": [
+			"error",
+			{
+				"arrays": "always-multiline",
+				"exports": "always-multiline",
+				"functions": "never",
+				"imports": "always-multiline",
+				"objects": "always-multiline"
+			}
+		]
 	}
 }
