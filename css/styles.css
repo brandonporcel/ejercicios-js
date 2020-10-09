@@ -129,9 +129,12 @@ body {
 	font-size: 2rem;
 	display: inline-block;
 	margin-bottom: 0.625rem;
-	background-color: var(--black-modal-color);
+	font-weight: bold;
+	user-select: none;
+
 	color: #fff;
 }
+
 /* SECTION 5 */
 
 .sun__title {
@@ -246,7 +249,12 @@ div#spotify iframe {
 .dark-mode .container-8 a {
 	color: var(--third-color);
 }
-.geolocation-btn {
+/* lo pongo aca para bttf herede los estilos pero no los evnetos. si le ponia esta clase en el htmnl->error */
+.geolocation-btn,
+.bttf__start-time,
+.bttf__stop-time,
+.bttf__start-alarm,
+.bttf__stop-alarm {
 	width: 150px;
 	margin-left: auto;
 	margin-right: auto;
