@@ -265,14 +265,26 @@ div#spotify iframe {
 	border: 1px solid transparent;
 	padding: 0.5rem;
 }
-.dark-mode .geolocation-btn {
+.dark-mode .geolocation-btn,
+.dark-mode .bttf__start-time,
+.dark-mode .bttf__stop-time,
+.dark-mode .bttf__start-alarm,
+.dark-mode .bttf__stop-alarm {
 	color: var(--main-color);
 	background-color: var(--black-modal-color);
 }
-.geolocation-btn:hover {
+.geolocation-btn:hover,
+.bttf__start-time:hover,
+.bttf__stop-time:hover,
+.bttf__start-alarm:hover,
+.bttf__stop-alarm:hover {
 	border: 1px solid var(--black-color);
 }
-.dark-mode .geolocation-btn:hover {
+.dark-mode .geolocation-btn:hover,
+.dark-mode .bttf__start-time:hover,
+.dark-mode .bttf__stop-time:hover,
+.dark-mode .bttf__start-alarm:hover,
+.dark-mode .bttf__stop-alarm:hover {
 	border: 1px solid var(--main-color);
 }
 /* escersie 10-> filter/buscador */
