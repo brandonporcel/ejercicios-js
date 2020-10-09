@@ -23,9 +23,11 @@ import { iSeeYou } from './exercises/detect_webcam.js';
 // exercise 9-> latitude-coordinates
 import { getGeolocation } from './exercises/geolocation.js';
 // exercise 10-> filter- intern searcher
-import { colador } from './filter_search.js';
+import { colador } from './exercises/filter_search.js';
 // 11-> raffle/draw.
 import { amongUs } from './exercises/raffle.js';
+// 12->carousel
+import { swimming } from './exercises/carousel.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 	panelMenu('#panel-btn', '#panel', '.menu__a');
@@ -60,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		'playerList',
 		'impostor-result'
 	);
+	swimming();
 });
 //  funca maso maso
 areYouThere();
