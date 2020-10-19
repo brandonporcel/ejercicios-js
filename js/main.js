@@ -28,6 +28,13 @@ import { colador } from './exercises/filter_search.js';
 import { amongUs } from './exercises/raffle.js';
 // 12->carousel
 import { swimming } from './exercises/carousel.js';
+// 13-> scrollspy
+import { iFollowYou } from './exercises/scroll_spy.js';
+// 14-> vode¿s}ad}asdsa
+import { videoTape } from './exercises/intelligent_video.js';
+// 15-<>valudacion
+import { feedback } from './exercises/form_validation.js';
+import { a } from './exercises/speech.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 	panelMenu('#panel-btn', '#panel', '.menu__a');
@@ -63,6 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		'impostor-result'
 	);
 	swimming();
+	iFollowYou();
+	videoTape();
+	feedback();
 });
 //  funca maso maso
 areYouThere();
+// tiene que estar aca
+a();

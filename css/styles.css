@@ -214,14 +214,12 @@ body {
 .dark-mode .panel {
 	background-color: var(--third-color);
 }
-.dark-mode .menu__a:hover {
-	background-color: var(--second-modal-color);
-}
+
 .dark-mode .filter__item {
 	background-color: var(--third-color);
 	color: #fff;
 }
-/* Responsive que no come todo el internet si estas en celu(?) */
+/* Responsive que no come todo el internet si estas en celu(?) -----------------------------------------------------------------------*/
 .section-3 .container {
 	height: 500px;
 }
@@ -233,7 +231,7 @@ div#twitter {
 	margin: 0 auto;
 	width: 30%;
 }
-/* Ejercicio 7-> connection to internet */
+/* Ejercicio 7-> connection to internet ------------------------------------------------------------------------------------------------*/
 .online,
 .offline {
 	background-color: rgb(27, 133, 27);
@@ -251,11 +249,11 @@ div#twitter {
 .offline {
 	background-color: red;
 }
-/* EXercise 8-> dec}tection webcam */
+/* EXercise 8-> dec}tection webcam ------------------------------------------------------------------------------------------------*/
 .container-7 {
 	display: block;
 }
-/* ejercicio 9-> geolocalizacion */
+/* ejercicio 9-> geolocalizacion------------------------------------------------------------------------------------------------ */
 div#spotify iframe {
 	height: 80px;
 }
@@ -267,7 +265,8 @@ div#spotify iframe {
 .bttf__start-time,
 .bttf__stop-time,
 .bttf__start-alarm,
-.bttf__stop-alarm {
+.bttf__stop-alarm,
+.formulario__btn {
 	width: 150px;
 	margin-left: auto;
 	margin-right: auto;
@@ -283,7 +282,8 @@ div#spotify iframe {
 .dark-mode .bttf__stop-time,
 .dark-mode .bttf__start-alarm,
 .dark-mode .bttf__stop-alarm,
-.dark-mode .responsiveTester__btn {
+.dark-mode .responsiveTester__btn,
+.dark-mode .formulario__btn {
 	color: var(--main-color);
 	background-color: var(--black-modal-color);
 }
@@ -292,7 +292,8 @@ div#spotify iframe {
 .bttf__stop-time:hover,
 .bttf__start-alarm:hover,
 .bttf__stop-alarm:hover,
-.responsiveTester__btn:hover {
+.responsiveTester__btn:hover,
+.formulario__btn:hover {
 	border: 1px solid var(--black-color);
 }
 .dark-mode .geolocation-btn:hover,
@@ -300,10 +301,11 @@ div#spotify iframe {
 .dark-mode .bttf__stop-time:hover,
 .dark-mode .bttf__start-alarm:hover,
 .dark-mode .bttf__stop-alarm:hover,
-.dark-mode .responsiveTester__btn:hover {
+.dark-mode .responsiveTester__btn:hover,
+.dark-mode .formulario__btn:hover {
 	border: 1px solid var(--main-color);
 }
-/* escersie 10-> filter/buscador */
+/* escersie 10-> filter/buscador ------------------------------------------------------------------------------------------------*/
 .filter {
 	height: 100%;
 	width: 100%;
@@ -372,7 +374,7 @@ div#spotify iframe {
 	margin-right: auto;
 	overflow-wrap: break-word;
 }
-/* 12 carusel */
+/* 12 carusel ------------------------------------------------------------------------------------------------------------*/
 .slider {
 	width: 50%;
 	margin: 0 auto;
@@ -439,8 +441,218 @@ div#spotify iframe {
 	right: 0;
 	top: 14%;
 }
+.slider__banner-nav {
+	background-color: var(--third-color);
+}
+
+.slider__nav-item {
+	width: 20px;
+	height: 20px;
+	background-color: var(--main-color);
+	margin-top: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+}
+.slider__nav-item.active {
+	background-color: var(--black-color);
+}
+/* 13 formulario ------------------------------------------------------------------------------------------------------------*/
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	--form-ok-color: #1ed12d;
+	--form-error-color: #bb2929;
+}
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	width: 50%;
+	margin: 0 auto;
+	cursor: pointer;
+	height: 25px;
+}
+.formulario__grupo-input {
+	position: relative;
+}
+.formulario__input {
+	background: #fff;
+	width: 50%;
+	margin: 0 auto;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 35px;
+	padding: 0;
+	line-height: 45px;
+	transition: 0.3s ease all;
+}
+.formulario__input:focus {
+	border: 3px solid #0075ff;
+	outline: none;
+	box-shadow: 3px 0 30px rgba(163, 163, 163, 0.4);
+}
+.formulario__input-error {
+	margin-bottom: 0;
+	font-size: 12px;
+	display: none;
+}
+.formulario__input-error.activo {
+	margin: 0;
+	display: block;
+}
+.formulario__validacion-estado {
+	position: absolute;
+	right: 136px;
+	bottom: 6px;
+	z-index: 100;
+	font-size: 16px;
+	color: red;
+	opacity: 0;
+}
+.formulario__checkbox {
+	margin-right: 10px;
+}
+.formulario__terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar,
+.formulario__comments {
+	grid-column: span 2;
+}
+.formulario__terminos-label {
+	width: 100%;
+}
+.formulario__mensaje {
+	height: 25px;
+	padding: 0 15px;
+	color: red;
+	display: none;
+}
+.formulario__mensaje.activo {
+	display: block;
+}
+.formulario__mensaje p {
+	margin: 0;
+}
+.formulario__grupo-btn-enviar,
+.formulario__comments {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: green;
+	display: none;
+}
+.formulario__mensaje-exito.activo {
+	display: block;
+}
+/* estilos valiudacion */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+.formulario__textarea {
+	resize: none;
+}
+
+.formulario__mensaje-error,
+.formulario__mensaje-error {
+	padding: 0.5rem;
+	text-align: left;
+	font-size: 12px;
+	background-color: var(--form-error-color);
+	color: #fff;
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+
+.formulario__mensaje-.active,
+.formulario__mensaje-error.active {
+	display: block;
+}
+.none {
+	display: none;
+}
+.formulario__input[required]:valid {
+	border: 3px solid var(--form-ok-color);
+}
+.formulario__input[required]:invalid {
+	border: 3px solid var(--form-error-color);
+}
+/* 14 */
+.speech__select,
+.speech__textarea {
+	width: 50%;
+	margin: 0 auto;
+}
+.speech__textarea {
+	margin-top: 10px;
+}
 /* tamaño compu */
 @media screen and (min-width: 1024px) {
+	body {
+		display: grid;
+		grid-template-columns: 80% 20%;
+		grid-template-rows: 4rem auto;
+		grid-template-areas:
+			'header header'
+			'main   panel';
+	}
+	.main {
+		grid-area: main;
+	}
+	.header {
+		grid-area: header;
+	}
+	.panel {
+		grid-area: panel;
+		position: sticky;
+		top: 4rem;
+		transform: translate(0, 0);
+		justify-content: flex-start;
+		align-self: flex-start;
+	}
+	.menu {
+		height: 100vh;
+	}
+	.menu__a:hover,
+	.menu__a.active {
+		font-weight: bold;
+		color: var(--main-color);
+		background-color: var(--third-color);
+	}
+	.dark-mode .menu__a:hover,
+	.dark-mode .menu__a.active {
+		background-color: var(--fourth-color);
+	}
+	.menu__a {
+		font-size: 0.8rem;
+		padding: 0.8rem;
+		text-align: right;
+	}
+	.panel-btn {
+		display: none;
+	}
+	.toTheSky {
+		left: calc(4rem + 1.25rem);
+		right: initial;
+	}
+	/* hover */
 	.header__title:hover {
 		color: var(--black-modal-color);
 	}
@@ -461,11 +673,7 @@ div#spotify iframe {
 	.title-sub::before {
 		left: 50%;
 	}
-	.menu__a:hover {
-		font-weight: bold;
-		color: var(--main-color);
-		background-color: var(--third-color);
-	}
+
 	.toTheSky.active:hover,
 	.theDarkSide-btn:hover {
 		opacity: 0.7;
@@ -475,6 +683,11 @@ div#spotify iframe {
 	}
 	.filter__input:hover {
 		background: #e2e2e2;
+	}
+}
+@media screen and (max-width: 965px) {
+	.header__title {
+		width: 30%;
 	}
 }
 @media screen and (max-width: 875px) {
@@ -488,11 +701,22 @@ div#spotify iframe {
 		margin-top: 20px;
 	}
 }
-@media screen and (max-width: 965px) {
-	.header__title {
-		width: 30%;
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos,
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
 	}
 }
+
 /* my cellphone */
 @media screen and (max-width: 675px) {
 	.header__title {

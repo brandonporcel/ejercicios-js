@@ -26,26 +26,63 @@
 		<aside id="panel" class="panel">
 			<ul class="menu">
 				<li class="menu__item">
-					<a href="#section-1" class="menu__a">Back to the Future(1)</a>
+					<a data-scroll-spy href="#section-1" class="menu__a"
+						>Back to the Future(1)</a
+					>
 				</li>
 				<li class="menu__item">
-					<a href="#section-2" class="menu__a">The End of the F***ing World(2)</a>
+					<a data-scroll-spy href="#section-2" class="menu__a"
+						>The End of the F***ing World(2)</a
+					>
 				</li>
 				<li class="menu__item">
-					<a href="#section-3" class="menu__a"
+					<a data-scroll-spy href="#section-3" class="menu__a"
 						>no puedo toy chiquito(responsive)(3)</a
 					>
 				</li>
 				<li class="menu__item">
-					<a href="#section-4" class="menu__a">responsive tester(4)</a>
+					<a data-scroll-spy href="#section-4" class="menu__a"
+						>responsive tester(4)</a
+					>
 				</li>
-				<li class="menu__item"><a href="#section-5" class="menu__a">Sun(5)</a></li>
-				<li class="menu__item"><a href="#section-6" class="menu__a">i know you(6) </a></li>
-				<li class="menu__item"><a href="#section-7" class="menu__a">i see you *insert bojack's voice*(7)</a></li>
-				<li class="menu__item"><a href="#section-8" class="menu__a">freaking out the neighborhood(8)</a></li>
-				<li class="menu__item"><a href="#section-9" class="menu__a">colador(9)</a></li>
-				<li class="menu__item"><a href="#section-10" class="menu__a">among us(10)</a></li>
-				<li class="menu__item"><a href="#section-11" class="menu__a">swimming(11)</a></li>
+				<li class="menu__item">
+					<a data-scroll-spy href="#section-5" class="menu__a">Sun(5)</a>
+				</li>
+				<li class="menu__item">
+					<a data-scroll-spy href="#section-6" class="menu__a"
+						>i know you(6)
+					</a>
+				</li>
+				<li class="menu__item">
+					<a data-scroll-spy href="#section-7" class="menu__a"
+						>i see you *insert bojack's voice*(7)</a
+					>
+				</li>
+				<li class="menu__item">
+					<a data-scroll-spy href="#section-8" class="menu__a"
+						>freaking out the neighborhood(8)</a
+					>
+				</li>
+				<li class="menu__item">
+					<a data-scroll-spy href="#section-9" class="menu__a">colador(9)</a>
+				</li>
+				<li class="menu__item">
+					<a data-scroll-spy href="#section-10" class="menu__a">among us(10)</a>
+				</li>
+				<li class="menu__item">
+					<a data-scroll-spy href="#section-11" class="menu__a">swimming-mac miller(11)</a>
+				</li>
+				<li class="menu__item">
+					<a data-scroll-spy href="#section-12" class="menu__a">ojos de video tape(12)</a>
+				</li>
+				</li>
+				<li class="menu__item">
+					<a data-scroll-spy href="#section-12" class="menu__a">feedback-kanye west(13)</a>
+				</li>
+				</li>
+				<li class="menu__item">
+					<a data-scroll-spy href="#section-12" class="menu__a">(14)</a>
+				</li>
 			</ul>
 		</aside>
 		<!-- OPEN PANEL(menu) -->
@@ -61,31 +98,39 @@
 		<!-- SECTIONNNN -->
 		<main class="main">
 			<!-- SECTION 1 -->
-			<section id="section-1" class="section section-1">
+			<section id="section-1" data-scroll-spy class="section section-1">
 				<div class="container">
-					<h2>Back to the Future</h2>
+					<span>Back to the Future</span>
 					<span id="clock" class="clock"></span>
 					<div class="form-clock">
-						<button class="bttf__start-time " id="start-watch">see <b>Time</b></button>
-						<button class="bttf__stop-time " disabled id="stop-watch">stop see <b>Time</b></button>
-						<button class="bttf__start-alarm " id="start-alarm">listen <b>Alarm</b></button>
-						<button class="bttf__stop-alarm " id="stop-alarm" disabled>stop listen <b>Alarm</b></button>
+						<button class="bttf__start-time" id="start-watch">
+							see <b>Time</b>
+						</button>
+						<button class="bttf__stop-time" disabled id="stop-watch">
+							stop see <b>Time</b>
+						</button>
+						<button class="bttf__start-alarm" id="start-alarm">
+							listen <b>Alarm</b>
+						</button>
+						<button class="bttf__stop-alarm" id="stop-alarm" disabled>
+							stop listen <b>Alarm</b>
+						</button>
 					</div>
 				</div>
 			</section>
 			<!-- SECTION 2 -->
-			<section id="section-2" class="section section-2">
+			<section id="section-2" data-scroll-spy class="section section-2">
 				<div class="container">
-					<h2 class="end-world__title">
+					<span class="end-world__title">
 						The End of the F***ing World will be in:
-					</h2>
+					</span>
 					<span id="countdown-text"></span>
 				</div>
 			</section>
 			<!-- SECTION 3 -->
-			<section id="section-3" class="section section-3">
+			<section id="section-3" data-scroll-spy class="section section-3">
 				<div class="container">
-					<h2>no puedo toy chiquito(responsive)</h2>
+					<span>no puedo toy chiquito(responsive)</span>
 					<div id="youtube"></div>
 					<div id="twitter"></div>
 					<script
@@ -96,11 +141,11 @@
 				</div>
 			</section>
 			<!-- SECTION 4 -->
-			<section id="section-4" class="section section-4">
+			<section id="section-4" data-scroll-spy class="section section-4">
 				<div class="container">
-					<h2>responsive tester</h2>
+					<span>responsive tester</span>
 					<code>introduce a width and height to see a page in that size</code>
-					<p></p>
+					<p>
 						example: <br />
 						https://google.com <br />
 						720 <br />
@@ -108,65 +153,97 @@
 					</p>
 					<form id="form-responsive-tester">
 						<!-- para heredar estilos -->
-						<input class="filter__input" type="url" name="url" placeholder="url" required />
+						<input
+							class="filter__input"
+							type="url"
+							name="url"
+							placeholder="url"
+							required
+						/>
 						<br />
 						<!-- para heredar estilos -->
-						<input class="filter__input" type="number" name="width" placeholder="width" required />
+						<input
+							class="filter__input"
+							type="number"
+							name="width"
+							placeholder="width"
+							required
+						/>
 						<br />
 						<!-- para heredar estilos -->
-						<input class="filter__input" type="number" name="height" placeholder="height" required />
+						<input
+							class="filter__input"
+							type="number"
+							name="height"
+							placeholder="height"
+							required
+						/>
 						<br />
-						<input class="responsiveTester__btn" type="submit" name="seeResponsivePage" value="see" />
-						<input class="responsiveTester__btn" type="button" name="closeResponsivePage" value="close page" />
+						<input
+							class="responsiveTester__btn"
+							type="submit"
+							name="seeResponsivePage"
+							value="see"
+						/>
+						<input
+							class="responsiveTester__btn"
+							type="button"
+							name="closeResponsivePage"
+							value="close page"
+						/>
 					</form>
 				</div>
 			</section>
 			<!-- SECTION 5 -->
-			<section id="section-5" class="section section-5">
+			<section id="section-5" data-scroll-spy class="section section-5">
 				<div class="container container-5">
-					<h2 class="sun__title"><mark>sun</mark></h2>
-					<marquee behavior="" direction="right">no conocia estoooo lol</marquee>
-					<code
-					>click on the map to move the sun <br />this game only works with an
-					keyboard</code
+					<span class="sun__title"><mark>sun</mark></span>
+					<marquee behavior="" direction="right"
+						>no conocia estoooo lol</marquee
 					>
-					
+					<code
+						>click on the map to move the sun <br />this game only works with an
+						keyboard</code
+					>
+
 					<article id="map" class="sun__map">
 						<div id="ball" class="sun__ball"></div>
 					</article>
 				</div>
 			</section>
 			<!-- SECTION 6 -->
-			<section id="section-6" class="section section-6">
+			<section id="section-6" data-scroll-spy class="section section-6">
 				<div class="container container-6">
-					<h2>i know you</h2>
+					<span>i know you</span>
 					<div id="user-device"></div>
 				</div>
 			</section>
 			<!-- SECTION 7 -->
-			<section id="section-7" class="section section-7">
+			<section id="section-7" data-scroll-spy class="section section-7">
 				<div class="container container-7">
 					<video id="webcam" controls></video>
 				</div>
 			</section>
 			<!-- SECTION 8 -->
-			<section id="section-8" class="section section-8">
+			<section id="section-8" data-scroll-spy class="section section-8">
 				<div class="container container-8">
-					<h1>freaking out the neighborhood</h1>
-					<div id="spotify">
-						<iframe src="https://open.spotify.com/embed/track/25SJaCCPiosugnlY53VhRG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-					</div>
+					<span>freaking out the neighborhood-mac demarco</span>
 					<button class="geolocation-btn">where i am(?)</button>
 					<div id="geolocation"></div>
 				</div>
 			</section>
 			<!-- SECTION 9 -->
-			<section id="section-9" class="section section-9">
+			<section id="section-9" data-scroll-spy class="section section-9">
 				<div class="container container-9">
 					<h4 class="filter__title">colador</h4>
 
 					<article class="filter">
-						<input class="filter__input" id="filter-input" type="text" placeholder="search">
+						<input
+							class="filter__input"
+							id="filter-input"
+							type="text"
+							placeholder="search"
+						/>
 						<ul id="filter__ul" class="filter__ul">
 							<li class="filter__item">the beatles</li>
 							<li class="filter__item">vos</li>
@@ -182,85 +259,333 @@
 							<li class="filter__item">walter white</li>
 							<li class="filter__item">david fincher</li>
 							<li class="filter__item">july3p</li>
-							
 						</ul>
 					</article>
 				</div>
 			</section>
 			<!-- SECTION 10 -->
-			<section id="section-10" class="section section-10">
+			<section id="section-10" data-scroll-spy class="section section-10">
 				<div class="container container-10 amongUs">
-					<h1 class="amongUs__title">among us</h1>
+					<span class="amongUs__title">among us</span>
 					<!-- agrego esa clase para que tengo los mismos estiulos. pero tengo que editarla un toqe para que js no tome esta como la que debe tomar lol -->
-					<input class="amongUs__input filter__input" id="inputAmongUs" type="text" placeholder="enter username">
+					<input
+						class="amongUs__input filter__input"
+						id="inputAmongUs"
+						type="text"
+						placeholder="enter username"
+					/>
 					<div class="amongUs__btn-ctn">
-						<input class="amongUs__addBtn geolocation-btn" id="btnAddToAmongUs" type="button" value="add player">
-						<input class="amongUs__impostorBtn geolocation-btn" id="btnSeeImpostor" type="button" value="see impostors">
+						<input
+							class="amongUs__addBtn geolocation-btn"
+							id="btnAddToAmongUs"
+							type="button"
+							value="add player"
+						/>
+						<input
+							class="amongUs__impostorBtn geolocation-btn"
+							id="btnSeeImpostor"
+							type="button"
+							value="see impostors"
+						/>
 					</div>
 					<p id="impostor-result"></p>
-					<ol class="amongUs__playerList" id="playerList">
-					</ol>
+					<ol class="amongUs__playerList" id="playerList"></ol>
 				</div>
 			</section>
 			<!-- SECTION 11 -->
-			<section id="section-11" class="section section-11">
+			<section id="section-11" data-scroll-spy class="section section-11">
 				<div class="container container-11">
-					<h1 class="slider_title">swimming</h1>
+					<span class="slider_title">swimming-mac miller</span>
 					<div class="slider">
 						<div class="slider__items-ctn">
-							<div class="slider__item ">
-
-								<!-- amy -->
-								<iframe src="https://open.spotify.com/embed/album/097eYvf9NKjFnv4xA9s2oV" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+							<!-- amy -->
+							<div class="slider__item amy">
+								<iframe
+									src="https://open.spotify.com/embed/album/097eYvf9NKjFnv4xA9s2oV"
+									width="300"
+									height="380"
+									frameborder="0"
+									allowtransparency="true"
+									allow="encrypted-media"
+								></iframe>
 							</div>
-							<div class="slider__item ">
-								<!-- canserbep -->
-								<iframe src="https://open.spotify.com/embed/album/27xqCLyTHom0wyjtw08K12" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+							<!-- canserbep -->
+							<div class="slider__item canserber">
+								<iframe
+									src="https://open.spotify.com/embed/album/27xqCLyTHom0wyjtw08K12"
+									width="300"
+									height="380"
+									frameborder="0"
+									allowtransparency="true"
+									allow="encrypted-media"
+								></iframe>
 							</div>
-							<div class="slider__item active">
-								<!-- long season -->
-								<iframe src="https://open.spotify.com/embed/album/4EX1fAypgQC9wDjGI5QzbZ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+							<!-- long season -->
+							<div class="slider__item active longSea">
+								<iframe
+									src="https://open.spotify.com/embed/album/4EX1fAypgQC9wDjGI5QzbZ"
+									width="300"
+									height="380"
+									frameborder="0"
+									allowtransparency="true"
+									allow="encrypted-media"
+								></iframe>
 							</div>
-							<div class="slider__item">
-								<!-- o.O -->
-								eu que tengas un buen dia 👍 </div>
-							<div class="slider__item">
-								<!--azul  -->
-								<iframe src="https://open.spotify.com/embed/album/7r7ZGTQNtiOGBKoJ1cNd4d" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+							<!-- wholesome -->
+							<div class="slider__item mensajee">
+								eu que tengas un buen dia 👍
 							</div>
-							<div class="slider__item">
-								<!-- lorem -->
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam doloremque velit, amet earum repellendus optio voluptates rem, nemo vel, perspiciatis aperiam illo provident veritatis ut praesentium? Numquam, obcaecati maiores. Ad.
+							<!--azul  -->
+							<div class="slider__item azul">
+								<iframe
+									src="https://open.spotify.com/embed/album/7r7ZGTQNtiOGBKoJ1cNd4d"
+									width="300"
+									height="380"
+									frameborder="0"
+									allowtransparency="true"
+									allow="encrypted-media"
+								></iframe>
 							</div>
-							<div class="slider__item ">
-								<!-- img -->
-								<img src="https://placeimg.com/400/800/animals" alt="">
+							<!-- lorem -->
+							<div class="slider__item lorem">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								Quibusdam doloremque velit, amet earum repellendus optio
+								voluptates rem, nemo vel, perspiciatis aperiam illo provident
+								veritatis ut praesentium? Numquam, obcaecati maiores. Ad.
+							</div>
+							<!-- img -->
+							<div class="slider__item imgg">
+								<img src="https://placeimg.com/400/800/animals" alt="" />
 							</div>
 						</div>
 						<div class="slider__btn-ctn">
-							<a class="slider__btn slider__prev-btn" id="slider__prev-btn" href="#"><----</a>
-							<a class="slider__btn slider__next-btn" id="slider__next-btn" href="#">---></a>
+							<a
+								class="slider__btn slider__prev-btn"
+								id="slider__prev-btn"
+								href="#"
+								><--🏊‍♂️</a
+							>
+							<a
+								class="slider__btn slider__next-btn"
+								id="slider__next-btn"
+								href="#"
+								>-->🚣‍♂️</a
+							>
 						</div>
+						<div class="slider__banner-nav">
+							<span class="slider__nav-item "></span>
+							<span class="slider__nav-item"></span>
+							<span class="slider__nav-item active"></span>
+							<span class="slider__nav-item"></span>
+							<span class="slider__nav-item"></span>
+							<span class="slider__nav-item"></span>
+							<span class="slider__nav-item"></span>
+						</div >
 					</div>
 				</div>
 			</section>
 			<!-- SECTION 12 -->
-			<section id="section-12" class="section section-12">
-				<div class="container container-12"></div>
+			<section id="section-12" data-scroll-spy class="section section-12">
+				<div class="container container-12">
+					<span>ojos de video tape-charly garcia</span>
+					<p>
+						el vidio solo se reproducira cuando se vea un 80% del mismo y se
+						pausara si sale de foco o abre otra pestaña 👍
+					</p>
+					<video
+						id="video-the-office"
+						src="assets/video/theoffice.mp4"
+						muted
+						loop
+						controls
+					></video>
+				</div>
 			</section>
 			<!-- SECTION 13 -->
-			<section id="section-13" class="section section-13">
-				<div class="container container-13"></div>
+			<section id="section-13" data-scroll-spy class="section section-13">
+				<div class="container container-13">
+					<span>feedback-kanye west</span>
+					<form id="formulario" class="formulario">
+						<!-- gurpo usuario -->
+						<div class="formulario__grupo" id="grupo__usuario">
+							<label for="ususario" class="formulario__label">User</label>
+							<div class="formulario__grupo-input">
+								<input
+									type="text"
+									class="formulario__input filter__input "
+									name="usuario"
+									id="ususario"
+									placeholder="johnlimon_123"
+								/>
+								<!-- required
+									title="tu user boludo" -->
+								<i class="formulario__validacion-estado">x</i>
+							</div>
+							<p class="formulario__input-error">
+								El usuario tiene que ser de 4 a 16 digitso y solo puede contener
+								numeros letras y gun bajko
+							</p>
+						</div>
+						<!-- gurpo nombre jon mircha -->
+						<div class="formulario__grupo" id="grupo__nombre">
+							<label for="nombree" class="formulario__label">nombre</label>
+							<div class="formulario__grupo-input">
+								<input
+									required
+									pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+									title="nombre solo acepta letras y espacios en blanco"
+									type="text"
+									class="formulario__input filter__input "
+									name="nombre"
+									id="nombree"
+									placeholder="wAilter wait"
+								/>
+								<i class="formulario__validacion-estado">x</i>
+							</div>
+							<p class="formulario__input-error">
+								El nombre tiene que ser de 4 a 16 digitso y solo puede contener
+								numeros letras y gun bajko
+							</p>
+						</div>
+						<!-- gurpo password -->
+						<div class="formulario__grupo" id="grupo__password">
+							<label for="passwordd" class="formulario__label">password</label>
+							<div class="formulario__grupo-input">
+								<input
+									type="password"
+									class="formulario__input filter__input "
+									name="password"
+									id="passwordd"
+								/>
+								<!-- required
+									title="tu contra salem" -->
+								<i class="formulario__validacion-estado">x</i>
+							</div>
+							<p class="formulario__input-error">
+								la contara tiene que ser de 4 1 a 12 digitos perro
+							</p>
+						</div>
+						<!-- gurpo password2 -->
+						<div class="formulario__grupo" id="grupo__password2">
+							<label for="passwordd2" class="formulario__label"
+								>repeat password</label
+							>
+							<div class="formulario__grupo-input">
+								<input
+									type="password"
+									class="formulario__input filter__input "
+									name="password2"
+									id="passwordd2"
+								/>
+								<!-- required
+									title="completa la misma salmaere" -->
+								<i class="formulario__validacion-estado">x</i>
+							</div>
+							<p class="formulario__input-error">
+								las contras tiene q xser ogiales sameee
+							</p>
+						</div>
+						<!-- gurpo mail -->
+						<div class="formulario__mail" id="grupo__correo">
+							<label for="maill" class="formulario__label">mail</label>
+							<div class="formulario__grupo-input">
+								<input
+									type="email"
+									class="formulario__input filter__input "
+									name="correo"
+									id="maill"
+									placeholder="lionelmeesi@gmail.com"
+								/>
+								<!-- pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+								title="mail incorrerct perro"
+									required -->
+								<i class="formulario__validacion-estado">x</i>
+							</div>
+							<p class="formulario__input-error">
+								El correo solo puede contener lñeteras,numeros,puntos,guoines y guin
+								bajoo
+							</p>
+						</div>
+						<!-- gurpo phone -->
+						<div class="formulario__mail" id="grupo__telefono">
+							<label for="phonee" class="formulario__label">phone</label>
+							<div class="formulario__grupo-input">
+								<input
+									type="text"
+									class="formulario__input filter__input "
+									name="telefono"
+									id="phonee"
+									placeholder="1122334455"
+								/>
+								<!-- title="pelotudododoodododod"
+									required -->
+								<i class="formulario__validacion-estado">x</i>
+							</div>
+							<p class="formulario__input-error">
+								el phone oslo puede contenre numberos y el maximo son 12 digitos
+							</p>
+						</div>
+						<!-- grupo textatea jon mircha-->
+						<div class="formulario__comments" id="grupo__textarea">
+							<textarea
+								title="tu comment no puede mas de 255 caractere s pelotudo"
+								data-pattern="^.{1,255}$"
+								name="comments"
+								cols="50"
+								rows="3"
+								class="formulario__textarea"
+								placeholder="escribi tus feedbak"
+								required
+							></textarea>
+							<i class="formulario__validacion-estado">x</i>
+						</div>
+						<!-- terminos  -->
+						<div class="formulario__grupo" id="grupo__terminos">
+							<label for="terminos" class="formulario__label formulario__terminos-label">
+								<input
+									type="checkbox"
+									class="formulario__checkbox"
+									name="terminos"
+									id="terminos"
+								/>
+								<!-- required
+									title="obligatorio lol" -->
+								acepto los terminos Y condiciones
+							</label>
+						</div>
+						<!-- loader -->
+						
+						
+						<!-- mensaje -->
+						<div class="formulario__mensaje" id="formulario__mensaje">
+							<b>eror: por favor rellena el form boludo</b>
+						</div>
+						<div class="formulario__grupo formulario__grupo-btn-enviar">
+							<button type="submit" class="formulario__btn">enviar</button>
+							<img class="formulario__loader none" src="assets/img/loader.svg" alt="caragando" />
+							<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+								se envio perri
+							</p>
+						</div>
+					</form>
+				</div>
 			</section>
 			<!-- SECTION 14 -->
-			<section id="section-14" class="section section-14">
-				<div class="container container-14"></div>
+			<section id="section-14" data-scroll-spy class="section section-14">
+				<div class="container container-14">
+					<span>hola frank-sumo</span>
+					<small>si estas en mozilla firefox es probable que no te funque un choto.saludos</small>
+					<select class="speech__select" id="speech-select">
+						<option value="">elegi una voz</option>
+					</select>
+					<textarea class="speech__textarea" id="speech-text" cols="50" rows="5" placeholder="pone texto"></textarea>
+					<button id="speech-btn" class="geolocation-btn">leer texto</button>
+				</div>
 			</section>
 		</main>
 		<!-- SECTION END -->
 		<button class="theDarkSide-btn">🌚</button>
 		<button class="toTheSky">👆</button>
 		<script src="js/main.js" type="module"></script>
-		
 	</body>
 </html>
